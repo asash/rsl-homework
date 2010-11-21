@@ -1,0 +1,16 @@
+scheme
+    cvs =
+class
+    type
+        FileVersion,
+        FileName,
+        File = FileName >< FileVersion,
+        FileList = File-list,
+        ProgramVersion,
+        ProgramName,
+        Program = ProgramName >< ProgramVersion >< FileList,
+        CVS
+    value
+        emptyCVS    :CVS
+end
+
